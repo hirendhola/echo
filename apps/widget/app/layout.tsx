@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google"
 
+// @ts-ignore: suppress missing type declarations for side-effect CSS import
 import "@workspace/ui/globals.css"
 import { Providers } from "@/components/providers"
 
