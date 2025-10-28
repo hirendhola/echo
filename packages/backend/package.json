@@ -3,13 +3,19 @@
   "type": "module",
   "scripts": {
     "dev": "convex dev",
-    "setup": "convex dev --until-success"
+    "setup": "convex dev --until-success",
+    "test": "vitest",
+    "test:once": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "exports": {
     "./convex": "./convex/*.ts"
   },
   "devDependencies": {
     "@workspace/typescript-config": "workspace:*",
+    "convex-test": "^0.0.37",
+    "vitest": "^2.1.8",
+    "@edge-runtime/vm": "^4.0.4",
     "typescript": "latest"
   },
   "dependencies": {
